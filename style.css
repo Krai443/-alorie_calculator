@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+.content{
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.canculate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+#languages{
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 17px;
+    transition: 50ms;
+    overflow: hidden;
+    appearance: none;
+    
+}
+.headH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.eat__info {
+    font-weight: 500;
+    font-size: 17px;
+}
+.eat__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.eat__input {
+    border: 1px solid grey;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+.date{
+    border: 1px solid grey;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+.eat__but {
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 17px;
+    transition: 50ms;
+    overflow: hidden;
+    appearance: none;
+}
+.but {
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 17px;
+    transition: 50ms;
+    overflow: hidden;
+    appearance: none;
+}
+.but:hover{
+    transform: scale(1.05);
+}
+.but:active{
+    transform: scale(0.9);
+    background: #429845;
+}
+.eat_list li{
+    text-decoration: underline 1px rgb(78, 78, 78);
+    list-style-type: none;
+}
+.selectedFood li{
+    list-style-type: none;
+}
+
+.foodSelected{
+    font-size: 18px;
+}
+
+
+.howMany{
+    border-radius: 10px;
+    width: 65px;
+    margin: 0 0 5px 5px;
+    padding: 2px 5px;
+    border: 1px solid grey;
+}
+.food_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+
+thead{
+    position: sticky;
+    top: -2px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+td:nth-child(4-6){ 
+    width: fit-content; 
+}
+
+.nav_link{
+    color: #333;
+}
+
+.none{
+    display: none;
+}
+
+.b1{
+    padding: 5px 10px;
+}
+
+.grafic{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prot{
+    height: 30px;
+    width: 50%;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carb{
+    height: 30px;
+    width: 50%;
+    background: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fat{
+    height: 30px;
+    width: 50%;
+    background: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.table_wrapper{
+    height: calc(100vh - 200px);
+    width: 100vw;
+    /* border: 2px solid blue; */
+    overflow-y: scroll;
+    overflow-x: scroll;
+  
+}
+@media (min-width: 768px) {
+    .canculate {
+        align-items: normal;
+        height: fit-content;
+    }
+    .content {
+        align-items: normal;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 0;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .eat{
+        margin: 0 20px;
+    }
+    .eat__content {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .eat__info {
+        font-size: 20px;
+    }
+    .eat__input {
+        font-size: 17px;
+        width: 300px;
+    }
+    .date{
+        font-size: 17px;
+        
+    }
+    .eat__but {
+        padding: 10px 15px;
+        font-size: 19px;
+    }
+    .but {
+        padding: 10px 15px;
+        font-size: 19px;
+    }
+    .eat_list{
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    .eat_New_list{
+        margin: 0 40px;
+        font-size: 17px;
+    }
+    .foodSelected {
+        margin-left: 20px;
+    }
+    .p_noEat {
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .save{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .nav_link{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .selectedFood{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .result{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .table_wrapper{
+        height: calc(100vh - 200px);
+        width: 30vw;
+        /* border: 2px solid blue; */
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+}
+@media (min-width: 1440px) {
+    .content{
+        width: 1440px;
+        margin: auto;
+    }
+    .header {
+        font-size: 40px;
+    }
+    .eat__content {
+        gap: 30px;
+    }
+    .eat__info {
+        font-size: 30px;
+    }
+    .eat__input {
+        font-size: 22px;
+        width: 350px;
+    }
+    .date{
+        font-size: 22px;
+    }
+    .eat__but {
+        font-size: 25px;
+    }
+    .but {
+        font-size: 25px;
+    }
+    .eat_list{
+        font-size: 25px;
+    }
+    .eat_New_list{
+        font-size: 25px;
+    }
+    .foodSelected {
+        font-size: 30px;
+    }
+    .p_noEat {
+        font-size: 25px;
+    }
+    .save{
+        font-size: 20px;
+    }
+    .nav_link{
+        font-size: 20px;
+    }
+    .selectedFood{
+        font-size: 25px;
+    }
+    .result{
+        font-size: 25px;
+    }
+    .howMany{
+        font-size: 20px;
+        width: 80px;
+        margin: 0 0 5px 5px;
+        padding: 5px 10px;
+    }
+    .food_block_wrapper{
+        width: 550px;
+    }}
+@media (min-width: 1920px) {
+    .content{
+        width: 1920px;
+    }
+}

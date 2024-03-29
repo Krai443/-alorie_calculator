@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="Wedsite Icon"
+      type="png"
+      href="https://cdn-icons-png.flaticon.com/512/1690/1690429.png"
+    />
+    <title class="title">Калькулятор калорий</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="headH1">
+      <h1 class="header">Рассчитывайте свою дневную норму калорий</h1> 
+      <select name="languages" id="languages">
+        <option value="ru">RU</option>
+        <option value="ua">UA</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+      
+    <div class="content">
+      <div class="canculate">
+        <div class="eat">
+          <div class="eat__info">
+            <span class="meal_time_title"> Виберите прием пищи:</span>
+            <select name="" class="eat__but">
+              <option value="breakfast" class="breakfast">Завтрак</option>
+              <option value="lunch" class="lunch">Обед</option>
+              <option value="dinner" class="dinner">Ужин</option>
+            </select>
+          </div>
+          <p class="eat__info">
+            <span class="meal_date_title"> Виберите дату: </span>
+            <input type="date" class="date">
+          </p>
+          <p class="eat__info quicFind">Введите продукт для быстрого поиска</p>
+          <div class="eat__content">
+            <input type="text" class="eat__input" />
+          </div>
+        </div>
+        <div class="food_list">
+          <h2 class="foodSelected">Выбраная еда:</h2>
+          <p class="p_noEat">Еда не выбрана</p>
+          <p class="save">Прием пищи сохранен</p>
+          <ol class="selectedFood"></ol>
+          <p class="result"></p>
+          <a class="nav_link" href="statistics.html">Перейти на страницу статистики</a>
+        </div>
+        <button class="but">Сохранить прием пищи</button>
+        <button class="but clearBut">Очистить список еды</button>
+      </div>
+      <div class="food_block_wrapper">
+        <h1 class="tab">Таблица калорий</h1>
+
+        <div class="table_wrapper">
+          <table>
+            <thead>
+              <tr class="tr">
+                <th class="th1">Продукт</th>
+                <th class="th2">Калории (кКал)</th>
+                <th class="th3">Жири</th>
+                <th class="th4">Билки</th>
+                <th class="th5">Вуглеводи</th>
+              </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
